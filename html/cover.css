@@ -198,5 +198,5 @@ body::-webkit-scrollbar-thumb {
 .dropdown-menu> .active > a:hover,
 .dropdown-menu> .active > a:focus {
   color: rgba(44, 177, 230, 0.493);
-  border-bottom-color: rgba(44, 177, 230, 0.493);
+  border-bottom-color: rgba(16, 94, 124, 0.493);
 }
