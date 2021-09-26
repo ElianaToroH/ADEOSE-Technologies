@@ -121,7 +121,7 @@ body {
 .mastfoot {
   color: rgb(190, 186, 186); /* IE8 proofing */
   color: rgba(255, 255, 255, 0.575);/* Color de letra */
-  background-color: #fff); /*Color del foot pagina*/ 
+  background-color: #fff; /*Color del foot pagina*/ 
   text-align: center; 
   }
 
@@ -174,7 +174,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* menu*/
-//*
+/*
 .dropdown-menu > li > a {
   padding-right: 0;
   padding-left: 0;
@@ -190,7 +190,7 @@ body::-webkit-scrollbar-thumb {
   border-bottom-color: rgba(44, 177, 230, 0.493);
   border-bottom-color: rgba(255, 255, 255, 0.25);
   border-radius: 11px; /* Recuadros al selecionar la opcion*/
-//*}
+/*}
 .dropdown-menu > .active > a,
 .dropdown-menu> .active > a:hover,
 .dropdown-menu> .active > a:focus {
