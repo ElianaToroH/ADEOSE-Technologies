@@ -34,7 +34,7 @@
       <div class="cover-container">  
         <div class="masthead clearfix">
           <div class="inner">
-            <h1 class="masthead-brand">Contact Center</h1>
+            <h1 class="masthead-brand"> <img src="../bootstrap-3.3.4-dist/img/Alogo.png" alt="" width="50"/> Contact Center</h1>
             <nav>
               <ul class="nav masthead-nav">
                 <li><a href="Index.html">Inicio</a></li>
@@ -43,144 +43,120 @@
             </nav>
           </div>
         </div>
-                       
-        <h1>Solicitudes</h1>
-        <hr>
-        <p>Estamos dispuestos a servirle. Permítanos conocer sus inquietudes y con gusto le daremos respuesta. <br/>
-            Tenga en cuenta que, nuestros tiempos de respuesta a las solicitudes son de 5 días hábiles.</p>
-        <br>
-
-               <div class="">                        
-            <h3>Datos generales</h3>
-            <br>
-            <br>
-
+        
+                  
+    <hr><h1>Solicitudes</h1><hr>
+    <p>Estamos dispuestos a servirle. Permítanos conocer sus inquietudes y con gusto le daremos respuesta. <br/>
+        Tenga en cuenta que, nuestros tiempos de respuesta a las solicitudes son de 5 días hábiles.</p>
+     <br>
+                        
+        <h3>Datos generales</h3><br>
+           
         <form action="/Contacto/Contacto" enctype="multipart/form-data" method="post"><input name="__RequestVerificationToken" type="hidden" value="F6mSyoU6vujxpWY2BRItZrQdH4tX7pvSAS0Vv8Z72bpvHpuVdA-zoyhHWFwKygfT0V1_De_bJssXo02S0lWAZ05OqE6-xPfPiXv318MgTzM1" />        
                 
                 <div class="form-row">
                     <form class="row g-3 needs-validation" novalidate>
+
                     <div class="form-group col-md-6">
                         <label class="control-label" for="tipoDocumento">Tipo de usuario</label>
                         <select class="form-control" data-val="true" required id="tipoDocumento" name="tipoDocumento"><option value="">Seleccione</option>
                             <option value="CD">PN-Persona Natural </option>
                             <option value="NI">PJ-Persona Juridica</option>                                                           
-                         </select>
-                            <span class="field-validation-valid text-danger" data-valmsg-for="nombre" data-valmsg-replace="true"></span>
+                        </select>
+                        <span class="field-validation-valid text-danger" data-valmsg-for="nombre" data-valmsg-replace="true"></span>
                     </div>         
     
-
-                <div class="form-group  col-md-6">
-                    <label class="control-label" for="nombre">Nombres y Apellidos / Razón Social *</label>
-                    <input id="nombre" name="nombre" type="text" class="form-control" required placeholder="Nombres y Apellidos / Razón Social">
-                    <span class="field-validation-valid text-danger" data-valmsg-for="tipoDocumento" data-valmsg-replace="true"></span>                                       
-                </div>
                 
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label class="control-label" for="tipoDocumento">Tipo de documento</label>
-                        <select class="form-control" data-val="true" required id="tipoDocumento" name="tipoDocumento"><option value="">Seleccione</option>
-                            <option value="CD">CC-cédula de ciudadanía </option>
-                            <option value="NI">NIT-Número de Identificación Tributaria</option>                        
-                        </select>
-                        <span class="field-validation-valid text-danger" data-valmsg-for="tipoDocumento" data-valmsg-replace="true"></span>
+                    <div class="form-group  col-md-6">
+                        <label class="control-label" for="nombre">Nombres y Apellidos / Razón Social *</label>
+                        <input id="nombre" name="nombre" type="text" class="form-control" required placeholder="Nombres y Apellidos / Razón Social">
+                        <span class="field-validation-valid text-danger" data-valmsg-for="tipoDocumento" data-valmsg-replace="true"></span>                                       
                     </div>
-
+                                                   
+                        <div class="form-group col-md-6">
+                            <label class="control-label" for="tipoDocumento">Tipo de documento</label>
+                            <select class="form-control" data-val="true" required id="tipoDocumento" name="tipoDocumento"><option value="">Seleccione</option>
+                                <option value="CD">CC-cédula de ciudadanía </option>
+                                <option value="NI">NIT-Número de Identificación Tributaria</option>                        
+                            </select>
+                            <span class="field-validation-valid text-danger" data-valmsg-for="tipoDocumento" data-valmsg-replace="true"></span>
+                        </div>
+                                   
                     <div class="form-group col-md-6">
                         <label class="control-label" for="numeroDocumento">Número de documento *</label>
                         <input id="numeroIdentificacion" name="numeroIdentificacion" type="text" class="form-control" autocomplete="off" required placeholder="Número de identificación" data-val-length="The field Número de identificación must be a string with a minimum length of 3 and a maximum length of 17.">
                         <span class="field-validation-valid text-danger" data-valmsg-for="numeroDocumento" data-valmsg-replace="true"></span>
-                 
                     </div>
-                </div>
-
-                <div class="form-row">
+                                
                     <div class="form-group col-md-6">
                         <label class="control-label" for="telefono">Teléfono *</label>
                         <input id="numeroTelefono" name="numeroTelefono" type="text" class="form-control" required placeholder="Número de teléfono">
                         <span class="field-validation-valid text-danger" data-valmsg-for="telefono" data-valmsg-replace="true"></span>
                     </div>
-
+                 
                     <div class="form-group col-md-6">
                         <label class="control-label" for="correo">Correo electronico *</label>
                         <input id="correo" name="correo" type="text" class="form-control" required placeholder="correo electronico">
                         <span class="field-validation-valid text-danger" data-valmsg-for="correo" data-valmsg-replace="true"></span>
                     </div>
-                </div>
-
-                <div class="form-row">
+                                    
                     <div class="form-group col-md-6">
                         <label class="control-label" for="asunto">Asunto *</label>
                         <select class="form-control" data-val="true" required id="asunto" name="asunto"><option value="">Seleccione</option>
-                        <option value="0">Peticiones</option>
-                        <option value="1">Quejas</option>
-                        <option value="2">Reclamos</option>
-                        <option value="3">Sugerencias</option>
-                        <option value="4">Otros</option>
-                   </select>
+                            <option value="0">Peticiones</option>
+                            <option value="1">Quejas</option>
+                            <option value="2">Reclamos</option>
+                            <option value="3">Sugerencias</option>
+                            <option value="4">Otros</option>
+                        </select>
                         <span class="field-validation-valid text-danger" data-valmsg-for="asunto" data-valmsg-replace="true"></span>
-                    </div>
-                 
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label class="control-label" for="asunto">Categoría *</label>
-                            <select class="form-control" data-val="true" required id="categoria" name="categoria"><option value="">Seleccione</option>
+                    </div>                               
+                
+                    <div class="form-group col-md-6">
+                        <label class="control-label" for="asunto">Categoría *</label>
+                        <select class="form-control" data-val="true" required id="categoria" name="categoria"><option value="">Seleccione</option>
                             <option value="0">Hardware</option>
                             <option value="1">Software</option>
                             <option value="2">Tics</option>
                             <option value="3">Otros</option>
                        </select>
-                            <span class="field-validation-valid text-danger" data-valmsg-for="categoria" data-valmsg-replace="true"></span>
-                        </div>  
-                   </div>
-
-                <div id="descripcionRow" class="form-row">
+                        <span class="field-validation-valid text-danger" data-valmsg-for="categoria" data-valmsg-replace="true"></span>
+                    </div>  
+                   
+                    <div id="descripcionRow" class="form-row">
                     <div class="form-group col-md-6">
                         <label class="control-label" for="descripcion">Descripción de la solicitud *</label>
                         <textarea class="form-control" cols="40" data-val="true" data-val-length="longitud máxima de 200 caracteres" data-val-length-max="200" id="descripcion" name="descripcion" placeholder="Descripción" rows="7" required>
                         </textarea>
                         <span class="field-validation-valid text-danger" data-valmsg-for="descripcion" data-valmsg-replace="true"></span>
                     </div>
-                </div>
-
-                <div class="form-row">
+                    </div>
+               
                     <div class="form-group col-md-6">
                         <label class="control-label" for="archivo">Seleccionar documento</label>
                         <input class="form-control" id="archivo" name="archivo" placeholder="Examinar" type="file" value="" />
                         <small id="passwordHelpBlock" class="form-text text-light">Peso máximo 10 Mb, archivos permitidos: pdf, xps, jpg, doc, docx</small>
                         <span class="field-validation-valid text-danger" data-valmsg-for="descripcion" data-valmsg-replace="true"></span>
-                    </div>
-                </div>
+                    </div>                
 
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-lg btn-info" role="button">Enviar</button>                         
+                     </div>
 
-                <div class="d-flex justify-content-end">
-                    <button type="submit" class="btn btn-lg btn-info" role="button">Enviar</button>
-                    <br>
-                    <br>      
-                </div>
+                 </div>
 
         </form>      
-
-        </div>
-
-
-    <br>
-        <!-- Main Content End -->
-             
-              
-                <div class="mastfoot">
-                    <div class="inner">
-                    <p class="credits text-center ">2021 Adeose Technologies</p>
-                    </div>
-                  </div>
-        </div>
-
-
-        <!--Footer Credits End -->
-    </footer>
-    <!-- Footer End	-->
-    <!-- Container Fluid Page End -->
-    <!-- 	Scripts  start	-->
-  
+            
+    <footer>             
+        <div class="mastfoot">
+            <div class="inner">              
+              <p class="credits text-center ">2021 Adeose Technologies</p>
+            </div>
+          </div>                      
+    </footer>          
+    
+</div>
+</div>
     
     <script src="../bootstrap-3.3.4-dist/js/bootstrap.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
             <!--Ingresamos el código de validación...-->
@@ -210,6 +186,6 @@
                
             </script>
     
-
+</div>
 </body>
 </html>
